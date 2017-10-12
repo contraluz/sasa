@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+  <% if(!email){ %>
+  	<div>
+  		<a href="/login">登录</a>
+  		<a href="/register">注册</a>
+  	</div>
+  <% }else{ %>
+  	<div>
+  		欢迎你:<%= email %>
+  		<a href="/logout">注销</a>
+  		<a href="/comment">评论</a>
+  	</div>
+  <% } %>
+  </body>
+</html>
